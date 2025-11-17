@@ -1,6 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 const express = require('express');
 const app = express();
+<SpeedInsights />
 app.get("/", (req, res) => {
   res.json({
     Id: "Id",
