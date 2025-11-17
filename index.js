@@ -16,6 +16,14 @@ app.get("/1", (req, res) => {
   });   
 });
 
+app.get('/2', (req, res) => {
+  res.send('Id');
+});
+
+app.get('/3', (req, res) => {
+  res.send('Pn');
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`App listening at <http://localhost>:${port}`);
